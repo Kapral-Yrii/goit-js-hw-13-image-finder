@@ -33,16 +33,14 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   background-color: #fff;
   color: #212121;
-  // background-color: #060606de;
   background-image: url('../images/background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 .btn__to-top {
-  display: flex;
+  display: none;
   justify-content: center;
-  opacity: 0;
   position: fixed;
   right: 50px;
   bottom: 50px;
@@ -55,7 +53,7 @@ body {
   border-color: var(--accent-color);
 
   &.show-btn {
-    opacity: 1;
+    display: flex;
   }
   &:hover,
   &:focus {
